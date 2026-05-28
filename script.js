@@ -37,9 +37,9 @@ copyButton?.addEventListener('click', async () => {
     await navigator.clipboard.writeText(value);
     copyStatus.textContent = 'Swishnumret är kopierat.';
   } catch {
-    copyStatus.textContent = 'Kunde inte kopiera automatiskt. Markera numret manuellt.';
+    copyStatus.textContent = 'Kopiera numret manuellt.';
   }
-  setTimeout(() => { copyStatus.textContent = ''; }, 2800);
+  setTimeout(() => { copyStatus.textContent = ''; }, 2600);
 });
 
 const observer = new IntersectionObserver((entries) => {
